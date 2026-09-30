@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EvidenciaCESBA"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#07346D"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programación Móvil 1"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#E8EAF0"
+            android:contentDescription="Fotografía de evidencia"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery"/>
+
+        <TextView
+            android:id="@+id/txtFechaHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capturado el: --/--/---- a las --:--:--"
+            android:textColor="#07346D"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOMAR FOTOGRAFÍA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#07346D"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título de la evidencia"
+            android:textStyle="bold"
+            android:textColor="#07346D"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej. Servidor CentOS 9"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textStyle="bold"
+            android:textColor="#07346D"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="top"
+            android:hint="Escribe los detalles..."
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de la evidencia"
+            android:textStyle="bold"
+            android:textColor="#07346D"
+            android:textSize="14sp"/>
+
+        <Spinner
+            android:id="@+id/spnEstado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#E8EAF0"
+            android:padding="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR EN GALERÍA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F0C"/>
+
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPARTIR EVIDENCIA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#28A745"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aún no se ha tomado una fotografía"
+            android:textColor="#777777"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
